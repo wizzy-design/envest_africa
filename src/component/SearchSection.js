@@ -103,6 +103,7 @@ const Suggest = styled.div`
     &:hover {
       background-color: #4c3c81;
       color: white;
+      transition: all 0.5s ease;
     }
   }
 `;

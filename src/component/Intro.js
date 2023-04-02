@@ -29,7 +29,7 @@ const Intro = () => {
         </Right>
       </Intro1>
       <Intro2>
-        <Left>
+        <Right>
           <div className="write-up">
             <h1>Actively track your investments with EASE.</h1>
             <p>
@@ -37,13 +37,15 @@ const Intro = () => {
               in quality businesses, and also helps businesses raise funds to
               help push their business goals from all over the globe.
             </p>
-            <div className="buttons button">Invest in a startup</div>
+            <div className="buttons">
+              <button>Invest in a startup</button>
+            </div>
           </div>
-        </Left>
-
-        <Right>
-          <img src={growthcurve} alt="Pic with queston mark" />
         </Right>
+
+        <Left>
+          <img src={growthcurve} alt="Pic with queston mark" />
+        </Left>
       </Intro2>
     </Introo>
   );
@@ -52,31 +54,30 @@ const Intro = () => {
 const Introo = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem 5rem;
 `;
 
 const Intro1 = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const Intro2 = styled.div`
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 0rem 5rem 0rem;
 `;
 
 const Left = styled.div`
+  width: 40%;
   img {
-    width: 22rem;
+    width: 24rem;
   }
 `;
 
 const Right = styled.div`
-  img {
-    width: 25rem;
-  }
-
-  .write-up{
+  width: 60%;
+ 
+  .write-up {
+    /* width: 80%; */
+    /* max-width: 60%; */
     padding: 0 1rem;
   }
 
@@ -90,13 +91,52 @@ const Right = styled.div`
   }
 
   .write-up p {
-    width: 80%;
+    width: 100%;
     padding: 1rem 0;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    /* line-height: 29px; */
+    font-size: 22px;
+    color: #5e5757;
+    line-height: 29px;
+  }
+
+  button {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4c3c81;
+    background: transparent;
+    border: 2px solid #4c3c81;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #4c3c81;
+      color: white;
+    }
+  }
+
+`;
+
+const Intro2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 0rem 5rem 0rem;
+
+  img{
+    width: 28rem;
+  }
+
+  button{
+    width: 20rem;
+    padding: 1rem .5rem;
   }
 `;
 

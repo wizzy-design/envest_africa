@@ -59,6 +59,8 @@ const UnList = styled.ul`
     border-radius: 0.3rem;
     padding: 0.5rem 1rem;
     font-weight: 700;
+    transition: all 0.5s ease;
+    
     &:hover {
       background-color: #4c3c81;
       color: white;
