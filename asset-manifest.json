@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/envest_africa/static/js/main.e3e39aee.js",
+    "main.js": "/envest_africa/static/js/main.71569f29.js",
     "static/js/787.62cdd2fb.chunk.js": "/envest_africa/static/js/787.62cdd2fb.chunk.js",
     "static/media/man.jpg": "/envest_africa/static/media/man.4ebad1cd9dfd583c12f7.jpg",
     "static/media/growthcurve.png": "/envest_africa/static/media/growthcurve.e58cfeea84dd19a2043d.png",
     "static/media/Questions.png": "/envest_africa/static/media/Questions.8f9c09cfb6833846be1a.png",
     "index.html": "/envest_africa/index.html",
-    "main.e3e39aee.js.map": "/envest_africa/static/js/main.e3e39aee.js.map",
+    "main.71569f29.js.map": "/envest_africa/static/js/main.71569f29.js.map",
     "787.62cdd2fb.chunk.js.map": "/envest_africa/static/js/787.62cdd2fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e3e39aee.js"
+    "static/js/main.71569f29.js"
   ]
 }
