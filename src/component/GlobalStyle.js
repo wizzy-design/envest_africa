@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   /* Scrollbar */
 
   * {

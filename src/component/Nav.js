@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import namelogo from "../img/namelogo.png";
+// For links
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -7,10 +9,16 @@ const Nav = () => {
       <Logo src={namelogo} alt="Logo" />
 
       <UnList>
-        <li>Explore</li>
+        <li>
+          <Link to="/">Explore</Link>
+          {/* <a href="/">Explore</a> */}
+        </li>
         <li>Pitch</li>
         <li>Find Start Ups</li>
-        <li>Sign In</li>
+        <li>
+        <Link to="/login">Sign In</Link>
+          {/* <a href="/login">Sign In</a> */}
+        </li>
         <li>
           <span>Join</span>
         </li>
@@ -60,7 +68,7 @@ const UnList = styled.ul`
     padding: 0.5rem 1rem;
     font-weight: 700;
     transition: all 0.5s ease;
-    
+
     &:hover {
       background-color: #4c3c81;
       color: white;

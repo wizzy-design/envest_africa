@@ -1,15 +1,26 @@
-import Nav from "./component/Nav";
+// Global Style
 import GlobalStyle from "../src/component/GlobalStyle";
+// Component & Pages
 import LandingPage from "./Pages/LandingPage";
-import Footer from "../src/component/Footer";
+import LoginPage from "./Pages/LoginPage";
+//Router
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div>
       <GlobalStyle />
-      <Nav />
-      <LandingPage />
-      <Footer />
+
+      {/* Router that navigates pages */}
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" exact element={<LandingPage />} />
+        {/* <Route path="/aboutus" exact element={<AboutUs />} />
+          <Route path="/work" exact element={<OurWork />} />
+          <Route path="/work/:id" exact element={<MovieDetail />} /> */}
+        <Route path="/login" exact element={<LoginPage />} />
+      </Routes>
     </div>
   );
 }
