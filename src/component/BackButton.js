@@ -5,11 +5,11 @@ import { FaArrowLeft } from "react-icons/fa";
 
 const BackButton = () => {
   const handleBack = () => {
-    window.location.href = "/";
+    window.location.href = "/envest_africa";
   };
 
   return (
-    <BackButtonn on onClick={handleBack}>
+    <BackButtonn onClick={handleBack}>
       <FaArrowLeft size={16} /> <p> Back</p>
     </BackButtonn>
   );

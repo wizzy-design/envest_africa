@@ -15,7 +15,7 @@ function App() {
 
       {/* Router that navigates pages */}
       <Routes location={location} key={location.pathname}>
-        <Route path="/" exact element={<LandingPage />} />
+        <Route path="/envest_africa" exact element={<LandingPage />} />
         {/* <Route path="/aboutus" exact element={<AboutUs />} />
           <Route path="/work" exact element={<OurWork />} />
           <Route path="/work/:id" exact element={<MovieDetail />} /> */}
