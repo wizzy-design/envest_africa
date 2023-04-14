@@ -11,9 +11,12 @@ const LoginPage = () => {
     <Page>
       <img src={Union} alt="3 dots" className="union union1" />
       <img src={Union2} alt="3 dotss" className="union union2" />
+      
+      {/* A back/exit button */}
       <BackButtonDiv>
         <BackButton />
       </BackButtonDiv>
+
       <LoginForm>
         <Logo>
           <img src={Envest} alt="Logo" />
@@ -28,7 +31,6 @@ const LoginPage = () => {
             <input type="password" placeholder="Password" />
             <input type="submit" value="Log In" id="submit" />
           </form>
-          {/* A back/exit button */}
         </Form>
       </LoginForm>
     </Page>

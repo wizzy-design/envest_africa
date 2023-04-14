@@ -1,3 +1,4 @@
+// Companies component is the line of companies we are trusted by
 // Images
 import Bankrate from "../img/Bankrate.png";
 import FoundersFund from "../img/FoundersFund.png";

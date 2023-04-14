@@ -16,11 +16,13 @@ const Nav = () => {
         <li>Pitch</li>
         <li>Find Start Ups</li>
         <li>
-        <Link to="/login">Sign In</Link>
+          <Link to="/login">Sign In</Link>
           {/* <a href="/login">Sign In</a> */}
         </li>
         <li>
-          <span>Join</span>
+          <Link to="/signup">
+            <span>Join</span>
+          </Link>
         </li>
       </UnList>
     </StyledNav>

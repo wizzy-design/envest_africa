@@ -1,3 +1,4 @@
+// Footer of the landing page
 import Envest from "../img/Envest.png";
 import styled from "styled-components";
 

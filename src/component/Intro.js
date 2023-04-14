@@ -1,3 +1,4 @@
+// The section of the landing page that introduces Envest
 import Questions from "../img/Questions.png";
 import Envest from "../img/Envest.png";
 import growthcurve from "../img/growthcurve.png";
