@@ -7,11 +7,14 @@ import Union2 from "../img/Union2.png";
 import styled from "styled-components";
 
 const LoginPage = () => {
+  const goBack = () => {
+    window.history.back();
+  };
   return (
     <Page>
       <img src={Union} alt="3 dots" className="union union1" />
       <img src={Union2} alt="3 dotss" className="union union2" />
-      
+
       {/* A back/exit button */}
       <BackButtonDiv>
         <BackButton />
@@ -29,7 +32,13 @@ const LoginPage = () => {
           <form>
             <input type="text" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <input type="submit" value="Log In" id="submit" />
+            <input type="submit" value="Log In" className="button button1" />
+            <input
+              type="button"
+              onClick={goBack}
+              value="Cancel"
+              className="button"
+            />
           </form>
         </Form>
       </LoginForm>
@@ -66,7 +75,7 @@ const LoginForm = styled.div`
   align-items: center;
   padding: 1rem;
   min-width: 35%;
-  height: 75%;
+  /* height: 75%; */
   min-height: 447px;
   max-height: 500px;
   border-radius: 0.8rem;
@@ -122,8 +131,8 @@ const Form = styled.div`
       }
     }
 
-    input#submit {
-      margin-top: 2rem;
+    input.button{
+      margin-top: .5rem;
       margin-bottom: 1rem;
       border-radius: 0.3rem;
       background: transparent;
@@ -137,6 +146,9 @@ const Form = styled.div`
         color: white;
         background-color: #4c3c81;
       }
+    }
+    input.button1{
+      margin-top: 2rem;
     }
   }
 `;

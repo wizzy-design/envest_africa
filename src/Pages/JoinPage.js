@@ -79,6 +79,7 @@ const LoginForm = styled.div`
   height: 75%;
   min-height: 447px;
   max-height: 500px;
+  max-width: 600px;
   border-radius: 0.8rem;
   background-color: white;
   overflow-x: hidden;

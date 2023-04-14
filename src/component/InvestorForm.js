@@ -28,13 +28,14 @@ const Form = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
-    width: 150%;
-    
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      text-align: center;
+    }
 
     input {
-        width: 100%;
       outline: none;
       padding: 0.5rem 0;
       margin-bottom: 1rem;
@@ -50,7 +51,6 @@ const Form = styled.div`
     }
 
     input.button {
-        width: 100%;
       margin-top: 2rem;
       margin-bottom: 1rem;
       border-radius: 0.3rem;

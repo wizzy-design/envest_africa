@@ -3,6 +3,8 @@ import { useState } from "react";
 import styled from "styled-components";
 // Images
 import Envest from "../img/Envest.png";
+// Link
+import { Link } from "react-router-dom";
 
 const UserType = ({ onUserTypeSelect }) => {
   const [showButtons, setShowButtons] = useState(true);
@@ -41,11 +43,14 @@ const UserType = ({ onUserTypeSelect }) => {
               <input
                 onClick={handleSeekerClick}
                 type="button"
-                value="I'm here to be invested in"
+                value="I’m here to pitch/get funding"
                 className="submit"
               />
+
+              <p>
+                Already have an account? <Link to="/login">Sign in</Link>
+              </p>
             </form>
-            {/* A back/exit button */}
           </Form>
         </>
       )}
@@ -88,7 +93,8 @@ const Form = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    align-items: center;
+    margin-top: 2rem;
 
     input {
       outline: none;
@@ -120,6 +126,13 @@ const Form = styled.div`
         color: white;
         background-color: #4c3c81;
       }
+    }
+
+    p {
+      font-size: .9rem;
+      font-family: "Poppins", sans-serif;
+      margin-top: 0.8rem;
+      text-align: center;
     }
   }
 `;
