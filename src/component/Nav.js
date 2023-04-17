@@ -13,8 +13,12 @@ const Nav = () => {
           <Link to="/">Explore</Link>
           {/* <a href="/">Explore</a> */}
         </li>
-        <li>Pitch</li>
-        <li>Find Start Ups</li>
+        <li>
+          <Link to="/signup">Pitch</Link>
+        </li>
+        <li>
+          <Link to="/signup">Find Startups</Link>
+        </li>
         <li>
           <Link to="/login">Sign In</Link>
           {/* <a href="/login">Sign In</a> */}

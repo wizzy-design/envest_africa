@@ -75,7 +75,6 @@ const LoginForm = styled.div`
   align-items: center;
   padding: 1rem;
   min-width: 35%;
-  /* height: 75%; */
   min-height: 447px;
   max-height: 500px;
   border-radius: 0.8rem;

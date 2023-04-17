@@ -1,70 +1,92 @@
 // Form which Investment seeker fills
 // Styled component
 import styled from "styled-components";
+import { useState } from "react";
 // Logos
 import Envest from "../img/Envest.png";
 import google2 from "../img/google2.png";
 import apple from "../img/apple.png";
 // Link
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+// Component
+import SignUpForm from "./SignUpForm";
 
 const SeekInvest = ({ onBackClick }) => {
+  const [seekForm, setSeekForm] = useState(true);
+
+  const handleSignUpClick = () => {
+    setSeekForm(false);
+  };
+
   return (
     <Form>
-      <form>
-        {/* Envest Logo */}
-        <Logo>
-          <img src={Envest} alt="Logo" />
-        </Logo>
-        {/* Subscript */}
-        <h3>
-          Let’s Sign you up to get that capital you need for your business 💼💵
-        </h3>
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        {/* Submit buttons */}
-        <div className="buttons">
-          <input type="submit" value="Sign Up" id="submit" className="button" />
-          <input
-            type="button"
-            onClick={onBackClick}
-            value="Cancel"
-            className="button"
-          />
-        </div>
-
-        {/* Alternative way to Sign Up */}
-        <div className="continue">
-          <p>
-            By Signing up, you accept the terms and conditions & privacy policy
-            of Envest or continue with ⬇️;
-          </p>
-          <div className="continue_buttons">
-            <div className="google">
-              <img src={google2} alt="Google icon" />
-              <span>Continue with Google</span>
-            </div>
-            <div className="apple">
-              <img src={apple} alt="Apple icon" />
-              <span>Continue with Apple</span>
-            </div>
+      {seekForm ? (
+        <form>
+          {/* Envest Logo */}
+          <Logo>
+            <img src={Envest} alt="Logo" />
+          </Logo>
+          {/* Subscript */}
+          <h3>
+            Let’s Sign you up to get that capital you need for your business
+            💼💵
+          </h3>
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          {/* Submit buttons */}
+          <div className="buttons">
+            <input
+              type="submit"
+              value="Sign Up"
+              id="submit"
+              className="button"
+              onClick={handleSignUpClick}
+            />
+            <input
+              type="button"
+              onClick={onBackClick}
+              value="Cancel"
+              className="button"
+            />
           </div>
-          <p>Already have an account? <Link to="/login">Sign in</Link></p>
-        </div>
-      </form>
+
+          {/* Alternative way to Sign Up */}
+          <div className="continue">
+            <p>
+              By Signing up, you accept the terms and conditions & privacy
+              policy of Envest or continue with ⬇️;
+            </p>
+            <div className="continue_buttons">
+              <div className="google">
+                <img src={google2} alt="Google icon" />
+                <span>Continue with Google</span>
+              </div>
+              <div className="apple">
+                <img src={apple} alt="Apple icon" />
+                <span>Continue with Apple</span>
+              </div>
+            </div>
+            <p>
+              Already have an account? <Link to="/login">Sign in</Link>
+            </p>
+          </div>
+        </form>
+      ) : (
+        // Form i'd be taken to after i click on sign up button
+        <SignUpForm />
+      )}
     </Form>
   );
 };
 
 const Form = styled.div`
-  /* width: 100%; */
+  max-width: 30rem;
 
   form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 
     h3 {
       font-family: Montserrat;
@@ -78,10 +100,10 @@ const Form = styled.div`
     }
 
     input {
-      width: 85%;
+      width: 80%;
       outline: none;
       padding: 0.5rem 0;
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       border: none;
       border-bottom: 1px dotted #6d6a7a;
       font-size: 1rem;
@@ -95,10 +117,13 @@ const Form = styled.div`
 
     .buttons {
       display: flex;
+      flex-direction: column;
+      margin: .5rem;
 
       input.button {
-        margin: 2rem 1.5rem;
-        padding: 0.5rem 1.5rem;
+        width: 12rem;
+        margin: .6rem 0rem;
+        /* padding: 0.5rem 1.5rem; */
         border-radius: 0.3rem;
         background: transparent;
         border: 2px solid #4c3c81;
@@ -118,20 +143,21 @@ const Form = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: .4rem;
+      margin-bottom: 0.4rem;
 
       p {
         width: 80%;
         text-align: center;
         font-size: 0.8rem;
-        font-family: Poppins;
+        font-family: "Poppins", sans-serif;
         margin-bottom: 1.5rem;
         color: #6d6a7a;
       }
 
       .continue_buttons {
         display: flex;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
         margin-bottom: 1.5rem;
 
         .google,
@@ -169,7 +195,7 @@ const Logo = styled.div`
   justify-content: center;
   margin: 2rem 0rem;
   img {
-    width: 35%;
+    width: 45%;
   }
 `;
 
