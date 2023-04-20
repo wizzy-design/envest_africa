@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <StyledNav>
-      <Logo src={namelogo} alt="Logo" />
+      <Link to="/envest_africa">
+        <Logo src={namelogo} alt="Logo" />
+      </Link>
 
       <UnList>
         <li>
-          <Link to="/">Explore</Link>
+          <Link to="/explore">Explore</Link>
           {/* <a href="/">Explore</a> */}
         </li>
         <li>
@@ -38,7 +40,7 @@ const StyledNav = styled.nav`
   width: 90%;
   /* padding: 1rem 0; */
   min-height: 10vh;
-  margin: 1rem 5rem;
+  margin: 1.8rem 5rem 0rem 5rem;
   justify-content: space-between;
   align-items: center;
 `;
@@ -51,7 +53,9 @@ const Logo = styled.img`
 
 const UnList = styled.ul`
   display: flex;
+  align-items: center ;
   list-style-type: none;
+  padding-bottom: 1.2rem;
 
   li {
     margin: 0 1rem;

@@ -50,6 +50,7 @@ const Left = styled.div`
   width: 50%;
 
   h1 {
+    /* font-size: 2.5rem; */
     width: 90%;
     line-height: 3rem;
     padding-bottom: 3rem;
