@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import vector from "../img/Vector.png";
 
-const IndustryCard = (props) => {
+const FeatureCard = (props) => {
   return (
     <Card>
       <Image>
-        <img src={props.imageUrl} alt="card pic" />
+        <img src={props.imageUrl} alt="card pic" id="cardimage" />
       </Image>
       <WriteUp>
-        <h2>{props.title}</h2>
+        <h2>
+          {props.title} <img src={vector} alt="green tick" id="tick" />
+        </h2>
         <p>{props.description}</p>
-        <button>Explore</button>
       </WriteUp>
     </Card>
   );
@@ -19,32 +21,37 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   flex: 0 0 auto; // So it doesn't shrink and grow
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
   width: 250px;
-  border: 1px solid #b9ade0;
-  border-radius: 10px;
   cursor: pointer;
 `;
 
 const Image = styled.div`
-  img {
+  #cardimage {
     width: 100%;
     height: 16rem;
-    object-fit: cover;
+    object-fit: contain;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
 `;
 
 const WriteUp = styled.div`
-  height: 10rem;
-  line-height: 29px;
-  padding: 1.5rem 0 1rem 1rem;
+  height: 6rem;
+  line-height: 30px;
+  padding: 0rem 0 1rem 0;
 
   h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #4c3c81;
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
+
+    #tick {
+      width: 0.7rem;
+    }
   }
 
   p {
@@ -52,24 +59,6 @@ const WriteUp = styled.div`
     font-size: 1.1rem;
     font-family: Montserrat;
   }
-
-  button {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #4c3c81;
-    width: 6rem;
-    padding: 0.5rem 0;
-    background: transparent;
-    border: 1px solid #4c3c81;
-    border-radius: 2.5px;
-    cursor: pointer;
-    transition: all ease 0.5s;
-
-    &:hover {
-      color: white;
-      background: #4c3c81;
-    }
-  }
 `;
 
-export default IndustryCard;
+export default FeatureCard;

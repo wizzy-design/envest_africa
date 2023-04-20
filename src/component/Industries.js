@@ -51,16 +51,17 @@ const Industries = () => {
 };
 
 const Industry = styled.div`
-  margin: 8rem 0 4rem 0;
+  margin: 8rem 0 8rem 0;
   h1 {
     text-align: center;
-    margin: 2rem 0 2.5rem 0;
+    margin: 2rem 0 3rem 0;
   }
 `;
 
 const Cards = styled.div`
   display: flex;
   width: 100%;
+  padding-left: 4rem;
   overflow-x: auto;
 `;
 
