@@ -12,3 +12,4 @@ among several other things. My confidence has been boosted a little 😁.
 Here's a twitter thread where i updated my weekly progress when building Envest: https://twitter.com/WisdomOchei/status/1640435381525966848?s=20
 
 Now, back to taking Dev Ed's react courses 🏃🏽‍♂️💨
+`Note: I haven't made the site responsive yet. Working on that`
