@@ -1,38 +1,29 @@
 // Companies component is the line of companies we are trusted by
 // Images
-import Bankrate from "../img/Bankrate.png";
-import FoundersFund from "../img/FoundersFund.png";
-import FundingCircle from "../img/FundingCircle .png";
-import Google from "../img/Google.png";
-import InvestDetroit from "../img/InvestDetroit.png";
-import Microsoft from "../img/Microsoft.png";
+import flutterwave from "../img/flutterwave-logo.svg";
+import evolve from "../img/evolve-logo.svg";
+import autocheck from "../img/autocheck-logo.svg";
+import carbon from "../img/carbon-logo.svg";
 
 import styled from "styled-components";
 
 const Companies = () => {
   return (
     <Partners>
+      <h3>Trusted By</h3>
+
       <Companys>
         <li>
-          <span>Trusted By:</span>
+          <img src={carbon} alt="Carbon" />
         </li>
         <li>
-          <img src={InvestDetroit} alt="Invest" />
+          <img src={autocheck} alt="Autocheck" />
         </li>
         <li>
-          <img src={Microsoft} alt="Micro" />
+          <img src={flutterwave} alt="Flutterwave" />
         </li>
         <li>
-          <img src={Google} alt="Goggle" />
-        </li>
-        <li>
-          <img src={Bankrate} alt="Bank" />
-        </li>
-        <li>
-          <img src={FundingCircle} alt="Fund" />
-        </li>
-        <li>
-          <img src={FoundersFund} alt="Founder" />
+          <img src={evolve} alt="Evolve" />
         </li>
       </Companys>
     </Partners>
@@ -41,31 +32,32 @@ const Companies = () => {
 
 const Partners = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 4rem 1rem;
+  flex-direction: column;
+  align-items: left;
+  margin: 4rem 5rem;
+
+  h3 {
+    padding: 0 0 2rem 0;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 `;
 
 const Companys = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 7rem;
 
   li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0rem 0rem;
-
-    span {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #4c3c81;
-    }
-
-    img {
-      width: 80%;
-    }
+    justify-content: space-between;
+    pointer-events: none;
   }
 `;
 

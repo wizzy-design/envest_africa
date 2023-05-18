@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import namelogo from "../img/namelogo.png";
+import namelogo from "../img/namelogo.svg";
+import down_arrow from "../img/nav_button.png";
 // For links
 import { Link } from "react-router-dom";
 
@@ -12,17 +13,25 @@ const Nav = () => {
 
       <UnList>
         <li>
-          <Link to="/explore">Explore</Link>
+          <Link to="/explore">
+            Explore <img src={down_arrow} alt="Down Arrow" />
+          </Link>
           {/* <a href="/">Explore</a> */}
         </li>
         <li>
-          <Link to="/signup">Pitch</Link>
+          <Link to="/signup">
+            Pitch <img src={down_arrow} alt="Down Arrow" />
+          </Link>
         </li>
         <li>
-          <Link to="/signup">Find Startups</Link>
+          <Link to="/signup">
+            Find Startups <img src={down_arrow} alt="Down Arrow" />
+          </Link>
         </li>
         <li>
-          <Link to="/login">Sign In</Link>
+          <Link to="/login">
+            Sign In <img src={down_arrow} alt="Down Arrow" />
+          </Link>
           {/* <a href="/login">Sign In</a> */}
         </li>
         <li>
@@ -46,14 +55,13 @@ const StyledNav = styled.nav`
 `;
 
 const Logo = styled.img`
-  height: 48px;
-  width: 152px;
+  width: 8.5rem;
   object-fit: contain;
 `;
 
 const UnList = styled.ul`
   display: flex;
-  align-items: center ;
+  align-items: center;
   list-style-type: none;
   padding-bottom: 1.2rem;
 
