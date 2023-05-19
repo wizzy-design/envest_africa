@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/envest_africa/static/js/main.239d3343.js",
+    "main.js": "/envest_africa/static/js/main.e77c4a48.js",
     "static/js/787.62cdd2fb.chunk.js": "/envest_africa/static/js/787.62cdd2fb.chunk.js",
     "static/media/farm_industry.png": "/envest_africa/static/media/farm_industry.1c9397e19e6c2626d13c.png",
     "static/media/farm.png": "/envest_africa/static/media/farm.6ab187fb1f0188146106.png",
@@ -17,19 +17,27 @@
     "static/media/protutor.png": "/envest_africa/static/media/protutor.44871d7f095c093b55ab.png",
     "static/media/carbon-logo.svg": "/envest_africa/static/media/carbon-logo.c0b076078b32466bb23cca29aa315280.svg",
     "static/media/ajoomicrofinance.png": "/envest_africa/static/media/ajoomicrofinance.adc9dff431478a6b468e.png",
-    "static/media/growthcurve.png": "/envest_africa/static/media/growthcurve.e58cfeea84dd19a2043d.png",
-    "static/media/Questions.png": "/envest_africa/static/media/Questions.8f9c09cfb6833846be1a.png",
     "static/media/evolve-logo.svg": "/envest_africa/static/media/evolve-logo.758c014d2a17848173c00428b53366d6.svg",
     "static/media/autocheck-logo.svg": "/envest_africa/static/media/autocheck-logo.f622b65f32479e345c888aa64a1a09de.svg",
+    "static/media/connect_bg.svg": "/envest_africa/static/media/connect_bg.f23397e28dc9b3391c2aad0373cdd196.svg",
     "static/media/flutterwave-logo.svg": "/envest_africa/static/media/flutterwave-logo.e31eb7654f99a2ecf2706e9abd1ec7d2.svg",
+    "static/media/small_flutter.svg": "/envest_africa/static/media/small_flutter.35a8d436d31c3e28cd51b3bac80bd490.svg",
     "static/media/namelogo.svg": "/envest_africa/static/media/namelogo.0ae3f5ba8a92a8801b3b33a8016783ac.svg",
+    "static/media/directpay2.svg": "/envest_africa/static/media/directpay2.f59ffdf418b40a69a0e9cd804a655cbe.svg",
+    "static/media/directpay1.svg": "/envest_africa/static/media/directpay1.df9e00ff22e59ad200f1288740fa2d62.svg",
+    "static/media/clock-loader-10.svg": "/envest_africa/static/media/clock-loader-10.625a3d0454f48e8cbbaf18786a403629.svg",
     "index.html": "/envest_africa/index.html",
+    "static/media/connect_logo.svg": "/envest_africa/static/media/connect_logo.1e941f5e1164189cae02a9c68b35a6d1.svg",
+    "static/media/directpay2_logo.svg": "/envest_africa/static/media/directpay2_logo.18432d493a6b5feb3cd64aa387d2d5c8.svg",
+    "static/media/directpay1-logo.svg": "/envest_africa/static/media/directpay1-logo.005367d961661597f6bce4da795fc9c7.svg",
+    "static/media/arrow-right-purple.svg": "/envest_africa/static/media/arrow-right-purple.86275b9fa66296491554e24e539e74d6.svg",
     "static/media/arrow-right-black.svg": "/envest_africa/static/media/arrow-right-black.391fa0a25e25f356a24b30da24848078.svg",
     "static/media/arrow-right-white.svg": "/envest_africa/static/media/arrow-right-white.9e7bb1628ed7d3186498cdcc13e064ca.svg",
-    "main.239d3343.js.map": "/envest_africa/static/js/main.239d3343.js.map",
+    "static/media/nav_button.svg": "/envest_africa/static/media/nav_button.4f72b759aae777b7a189f6838ab4a871.svg",
+    "main.e77c4a48.js.map": "/envest_africa/static/js/main.e77c4a48.js.map",
     "787.62cdd2fb.chunk.js.map": "/envest_africa/static/js/787.62cdd2fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.239d3343.js"
+    "static/js/main.e77c4a48.js"
   ]
 }
