@@ -12,9 +12,7 @@ const LandingSection = () => {
           <img src={blackArrow} alt="Black Arrow" />
         </div>
 
-        <h1>
-          Invest and Discover Quality
-        </h1>
+        <h1>Invest and Discover Quality</h1>
         <h2>Discover and Invest in Quality Businesses in Nigeria. </h2>
 
         <div className="buttons">
@@ -38,13 +36,13 @@ const LandingSection = () => {
 
 const Section = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  justify-content: space-between;
+  margin: 2rem 10rem;
+  width: 80%;
 `;
 
 const Left = styled.div`
-  width: 50%;
   margin: 0 0 1rem;
 
   .announcement {
@@ -71,7 +69,7 @@ const Left = styled.div`
   }
 
   h1 {
-    width: 80%;
+    width: 90%;
     font-family: Inter;
     font-size: 55px;
     font-weight: 600;
@@ -117,6 +115,11 @@ const Left = styled.div`
       color: #ffffff;
       background-color: #4c3c81;
     }
+
+    .white{
+      color: #000;
+      background-color: #f5f5f5;
+    }
   }
 `;
 
@@ -130,14 +133,10 @@ const Right = styled.div`
 `;
 
 const Img = styled.div`
-  /* position: relative; */
-  padding: .5rem 0 0 0;
-  /* overflow: hidden; */
+  padding: 0.5rem 0 0 0;
   width: 100%;
 
   img.man {
-    /* height: 70vh; */
-    width: 95%;
     object-fit: cover;
   }
 `;
