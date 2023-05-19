@@ -34,7 +34,7 @@ const Partners = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 4rem 5rem;
+  margin: 2rem 5rem 6rem;
 
   h3 {
     padding: 0 0 2rem 0;

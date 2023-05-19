@@ -13,8 +13,7 @@ const LandingSection = () => {
         </div>
 
         <h1>
-          Invest and
-          <br /> Discover Quality
+          Invest and Discover Quality
         </h1>
         <h2>Discover and Invest in Quality Businesses in Nigeria. </h2>
 
@@ -46,6 +45,7 @@ const Section = styled.div`
 
 const Left = styled.div`
   width: 50%;
+  margin: 0 0 1rem;
 
   .announcement {
     display: flex;
@@ -71,6 +71,7 @@ const Left = styled.div`
   }
 
   h1 {
+    width: 80%;
     font-family: Inter;
     font-size: 55px;
     font-weight: 600;
@@ -130,17 +131,14 @@ const Right = styled.div`
 
 const Img = styled.div`
   /* position: relative; */
-  padding: 1.5rem 0 0 0;
-  overflow: hidden;
-  height: 70vh;
-  border-top-left-radius: 6rem;
-  border-bottom-left-radius: 6rem;
-  border-top-right-radius: 6rem;
+  padding: .5rem 0 0 0;
+  /* overflow: hidden; */
+  width: 100%;
 
   img.man {
-    height: 70vh;
-    width: 100%;
-    object-fit: contain;
+    /* height: 70vh; */
+    width: 95%;
+    object-fit: cover;
   }
 `;
 
