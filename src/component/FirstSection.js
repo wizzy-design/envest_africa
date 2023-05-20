@@ -111,7 +111,7 @@ const PictureGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 1rem;
   padding: 2rem 10rem 8rem;
 
   .words {

@@ -49,15 +49,15 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
   display: flex;
-  width: 90%;
+  width: 80%;
   min-height: 10vh;
-  margin: 1rem 5rem 0.5rem 5rem;
+  margin: 1rem 10rem 0.5rem 10rem;
   justify-content: space-between;
   align-items: center;
 `;
 
 const Logo = styled.img`
-  width: 8.5rem;
+  width: 7.5rem;
   object-fit: contain;
 `;
 
@@ -68,7 +68,7 @@ const UnList = styled.ul`
 
   li {
     margin: 0 0.5rem;
-    padding: 0 1rem;
+    padding: 0 .8rem;
     font-family: Inter;
     font-weight: 500;
     font-size: .95rem;
