@@ -5,7 +5,7 @@ import FirstSection from "../component/FirstSection";
 import SecondSection from "../component/SecondSection";
 import ThirdSection from "../component/ThirdSection";
 import FourthSection from "../component/FourthSection";
-// import Footer from "../component/Footer";
+import Footer from "../component/Footer";
 import Nav from "../component/Nav";
 
 const LandingPage = () => {
@@ -18,7 +18,7 @@ const LandingPage = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
