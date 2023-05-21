@@ -84,7 +84,7 @@ const CommentGrid = styled.div`
 `;
 
 const Comment = styled.div`
-  width: 448px;
+  width: 400px;
   height: 525px;
   background: #f5f5f5;
   padding: 2rem;
@@ -95,7 +95,7 @@ const Comment = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 138%;
     margin-bottom: 4rem;
   }
