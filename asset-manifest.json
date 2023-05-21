@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/envest_africa/static/js/main.04352de5.js",
+    "main.js": "/envest_africa/static/js/main.aacd3362.js",
     "static/js/787.62cdd2fb.chunk.js": "/envest_africa/static/js/787.62cdd2fb.chunk.js",
     "static/media/farm_industry.png": "/envest_africa/static/media/farm_industry.1c9397e19e6c2626d13c.png",
     "static/media/farm.png": "/envest_africa/static/media/farm.6ab187fb1f0188146106.png",
-    "static/media/profile1.svg": "/envest_africa/static/media/profile1.28a34bf6b0f2964d780eb7e75bdda6c0.svg",
+    "static/media/profile1.svg": "/envest_africa/static/media/profile1.f15836068fbc0c3fb1591d8270695e1d.svg",
     "static/media/profile2.svg": "/envest_africa/static/media/profile2.b6413fd0e9222ff2ad794f4b3974d889.svg",
     "static/media/house_industry.png": "/envest_africa/static/media/house_industry.7522baa76ef0c042f617.png",
     "static/media/food_industry.png": "/envest_africa/static/media/food_industry.bb29b4084a8002165e44.png",
@@ -21,16 +21,25 @@
     "static/media/carbon-logo.svg": "/envest_africa/static/media/carbon-logo.c0b076078b32466bb23cca29aa315280.svg",
     "static/media/ajoomicrofinance.png": "/envest_africa/static/media/ajoomicrofinance.adc9dff431478a6b468e.png",
     "static/media/evolve-logo.svg": "/envest_africa/static/media/evolve-logo.758c014d2a17848173c00428b53366d6.svg",
+    "static/media/plugIcon.svg": "/envest_africa/static/media/plugIcon.048f70e70a6dab44dc8ea916f83e164e.svg",
+    "static/media/suitcase.svg": "/envest_africa/static/media/suitcase.6e15611c3e582f9633465207991c3be1.svg",
+    "static/media/fan.svg": "/envest_africa/static/media/fan.6e03baecf695a6d82fa5fb6142480ca5.svg",
+    "static/media/phonecodes.svg": "/envest_africa/static/media/phonecodes.167c1495d196af035a28116282dbe2c7.svg",
+    "static/media/folder.svg": "/envest_africa/static/media/folder.525459dee0ddefec336d7d949ac6bbe8.svg",
     "static/media/autocheck-logo.svg": "/envest_africa/static/media/autocheck-logo.f622b65f32479e345c888aa64a1a09de.svg",
     "static/media/connect_bg.svg": "/envest_africa/static/media/connect_bg.f23397e28dc9b3391c2aad0373cdd196.svg",
     "static/media/flutterwave-logo.svg": "/envest_africa/static/media/flutterwave-logo.e31eb7654f99a2ecf2706e9abd1ec7d2.svg",
     "static/media/small_flutter.svg": "/envest_africa/static/media/small_flutter.35a8d436d31c3e28cd51b3bac80bd490.svg",
+    "static/media/subtractBg.svg": "/envest_africa/static/media/subtractBg.d60af5ac89316ba5539e0d0e6038eafa.svg",
     "static/media/namelogo.svg": "/envest_africa/static/media/namelogo.0ae3f5ba8a92a8801b3b33a8016783ac.svg",
+    "static/media/Envest.svg": "/envest_africa/static/media/Envest.4ff3cabe993099d80562cd7fec043906.svg",
     "static/media/directpay2.svg": "/envest_africa/static/media/directpay2.f59ffdf418b40a69a0e9cd804a655cbe.svg",
     "static/media/directpay1.svg": "/envest_africa/static/media/directpay1.df9e00ff22e59ad200f1288740fa2d62.svg",
     "static/media/clock-loader-10.svg": "/envest_africa/static/media/clock-loader-10.625a3d0454f48e8cbbaf18786a403629.svg",
+    "static/media/mdi_twitter.svg": "/envest_africa/static/media/mdi_twitter.bb57d33f36b3fe4fb4f6f3d17b8dcad7.svg",
     "static/media/Union.svg": "/envest_africa/static/media/Union.e3b8752b21f1fb200f66491c2001787d.svg",
     "index.html": "/envest_africa/index.html",
+    "static/media/typcn_social-linkedin.svg": "/envest_africa/static/media/typcn_social-linkedin.616a6d241e99d50b5588ed39cb6f196a.svg",
     "static/media/arrows.svg": "/envest_africa/static/media/arrows.f46d0fb94a844faaa5330acc40c80acc.svg",
     "static/media/connect_logo.svg": "/envest_africa/static/media/connect_logo.1e941f5e1164189cae02a9c68b35a6d1.svg",
     "static/media/directpay2_logo.svg": "/envest_africa/static/media/directpay2_logo.18432d493a6b5feb3cd64aa387d2d5c8.svg",
@@ -40,10 +49,11 @@
     "static/media/arrow-right-white.svg": "/envest_africa/static/media/arrow-right-white.9e7bb1628ed7d3186498cdcc13e064ca.svg",
     "static/media/ellipse.svg": "/envest_africa/static/media/ellipse.6f9c0d4bdacf0fa1aab604471a09c929.svg",
     "static/media/nav_button.svg": "/envest_africa/static/media/nav_button.4f72b759aae777b7a189f6838ab4a871.svg",
-    "main.04352de5.js.map": "/envest_africa/static/js/main.04352de5.js.map",
+    "static/media/period.svg": "/envest_africa/static/media/period.adbbf3344a3e779cbb9361821206ebcc.svg",
+    "main.aacd3362.js.map": "/envest_africa/static/js/main.aacd3362.js.map",
     "787.62cdd2fb.chunk.js.map": "/envest_africa/static/js/787.62cdd2fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.04352de5.js"
+    "static/js/main.aacd3362.js"
   ]
 }
