@@ -207,6 +207,8 @@ const Foooter = styled.footer`
         gap: 0.3rem;
         font-size: 13px;
         color: #ffffff;
+        padding-top: 4.5px;
+        height: 21.57px;
       }
 
       .part {

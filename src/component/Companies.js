@@ -34,7 +34,7 @@ const Partners = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 2rem 5rem 6rem;
+  margin: 2rem 10rem 6rem;
 
   h3 {
     padding: 0 0 2rem 0;
@@ -50,13 +50,12 @@ const Partners = styled.div`
 const Companys = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 7rem;
 
   li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     pointer-events: none;
   }
 `;
