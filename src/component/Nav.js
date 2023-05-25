@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import namelogo from "../img/namelogo.png";
+import namelogo from "../img/namelogo.svg";
+import down_arrow from "../img/nav_button.svg";
 // For links
 import { Link } from "react-router-dom";
 
@@ -12,76 +13,105 @@ const Nav = () => {
 
       <UnList>
         <li>
-          <Link to="/explore">Explore</Link>
+          <Link to="/explore">
+            Explore <img src={down_arrow} alt="Down Arrow" />
+          </Link>
           {/* <a href="/">Explore</a> */}
         </li>
         <li>
-          <Link to="/signup">Pitch</Link>
-        </li>
-        <li>
-          <Link to="/signup">Find Startups</Link>
-        </li>
-        <li>
-          <Link to="/login">Sign In</Link>
-          {/* <a href="/login">Sign In</a> */}
+          <Link to="/signup">
+            Pitch <img src={down_arrow} alt="Down Arrow" />
+          </Link>
         </li>
         <li>
           <Link to="/signup">
-            <span>Join</span>
+            Find Startups <img src={down_arrow} alt="Down Arrow" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/signup">
+            Dashboard <img src={down_arrow} alt="Down Arrow" />
           </Link>
         </li>
       </UnList>
+
+      <Buttons>
+        <button className="white">
+          <Link to="/login">Sign In</Link>
+        </button>
+        <button className="purple">
+          <Link to="/signup">Create Free Account</Link>
+        </button>
+      </Buttons>
     </StyledNav>
   );
 };
 
 const StyledNav = styled.nav`
   display: flex;
-  width: 90%;
-  /* padding: 1rem 0; */
+  width: 80%;
   min-height: 10vh;
-  margin: 1.8rem 5rem 0rem 5rem;
+  margin: 1rem 10rem 0.5rem 10rem;
   justify-content: space-between;
   align-items: center;
 `;
 
 const Logo = styled.img`
-  height: 48px;
-  width: 152px;
+  width: 7.5rem;
   object-fit: contain;
 `;
 
 const UnList = styled.ul`
   display: flex;
-  align-items: center ;
+  align-items: center;
   list-style-type: none;
-  padding-bottom: 1.2rem;
 
   li {
-    margin: 0 1rem;
-    padding: 0 1rem;
-    font-family: "Montserrat", sans-serif;
+    margin: 0 0.5rem;
+    padding: 0 .8rem;
+    font-family: Inter;
     font-weight: 500;
-    font-size: 20px;
+    font-size: .95rem;
     line-height: 29px;
-    color: #4c3c81;
     cursor: pointer;
     transition: all 0.5s ease;
-    &:hover {
-      font-weight: 700;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #000;
+    }
+  }
+`;
+
+const Buttons = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  button {
+    font-family: Inter;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+  }
+
+  .white {
+    background-color: transparent;
+    border: 2px solid #4c3c81;
+    width: 5rem;
+
+    a {
+      color: #4c3c81;
     }
   }
 
-  span {
-    border: 1px solid #a191d6;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    transition: all 0.5s ease;
+  .purple {
+    background-color: #4c3c81;
+    border: 1px solid #4c3c81;
+    width: 10rem;
 
-    &:hover {
-      background-color: #4c3c81;
-      color: white;
+    a {
+      color: #fff;
     }
   }
 `;

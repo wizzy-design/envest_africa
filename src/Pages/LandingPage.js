@@ -1,7 +1,10 @@
 // Components
-import SearchSection from "../component/SearchSection";
+import LandingSection from "../component/LandingSection";
 import Companies from "../component/Companies";
-import Intro from "../component/Intro";
+import FirstSection from "../component/FirstSection";
+import SecondSection from "../component/SecondSection";
+import ThirdSection from "../component/ThirdSection";
+import FourthSection from "../component/FourthSection";
 import Footer from "../component/Footer";
 import Nav from "../component/Nav";
 
@@ -9,9 +12,12 @@ const LandingPage = () => {
   return (
     <div>
       <Nav />
-      <SearchSection />
+      <LandingSection />
       <Companies />
-      <Intro />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
       <Footer />
     </div>
   );
